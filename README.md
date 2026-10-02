@@ -1,6 +1,6 @@
 # Applied Cryptography Toolkit
 
-## 📖 About
+## About
 
 An educational Python toolkit for studying modern applied cryptography through reviewed constructions built on established cryptographic primitives. It is designed to connect cryptographic engineering with the mathematics and security assumptions behind the primitives.
 
@@ -8,7 +8,7 @@ An educational Python toolkit for studying modern applied cryptography through r
 
 Implementing cryptography is less about inventing primitives and more about composing well-understood primitives correctly. This project provides small, testable examples for authenticated encryption, password derivation, signatures, key agreement, key derivation, serialization, and failure handling.
 
-## ✨ Features
+## Features
 
 - AES-256-GCM authenticated encryption
 - Argon2id password-based key derivation
@@ -20,7 +20,7 @@ Implementing cryptography is less about inventing primitives and more about comp
 - Negative tests for tampering and malformed input
 - Explicit verification-failure handling
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python
 - `cryptography`
@@ -28,7 +28,7 @@ Implementing cryptography is less about inventing primitives and more about comp
 - pytest
 - `pyproject.toml` packaging
 
-## 🏗 Architecture
+## Architecture
 
 ```text
 Application input
@@ -46,7 +46,7 @@ Verification / negative-path tests
 
 The toolkit deliberately uses established libraries rather than implementing AES, Ed25519, X25519, or other primitives from scratch.
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 .
@@ -56,12 +56,12 @@ The toolkit deliberately uses established libraries rather than implementing AES
 └── README.md
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.11+
 - pip or an equivalent Python environment manager
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/matinwgg/Applied-Cryptography-Toolkit.git
@@ -72,17 +72,17 @@ pip install -e .
 pytest -q
 ```
 
-## 💻 Usage
+## Usage
 
 Use the public APIs exposed by `src/`. Each primitive should be treated as a small demonstration of a cryptographic construction, with key/nonce lifecycle and serialization requirements preserved by the caller.
 
-## 🔐 Security Model
+## Security Model
 
-The project emphasizes authenticated encryption, memory-hard password derivation, separation of key agreement from key derivation, explicit verification, and fail-closed handling. It is **not** a replacement for a reviewed production cryptographic library.
+The project emphasises authenticated encryption, memory-hard password derivation, separation of key agreement from key derivation, explicit verification, and fail-closed handling. It is **not** a replacement for a reviewed production cryptographic library.
 
 The mathematical foundations include finite fields, modular arithmetic, groups, probability, entropy, computational hardness, collision resistance, authentication, and key derivation.
 
-## 🧪 Testing
+## Testing
 
 ```bash
 pytest -q
@@ -90,22 +90,22 @@ pytest -q
 
 Security tests should include tampering, malformed ciphertexts, nonce misuse assumptions, invalid signatures, wrong keys, and serialization changes.
 
-## 🚧 Limitations & Future Work
+## Limitations & Future Work
 
-- Formalize security properties for each construction.
+- Formalise security properties for each construction.
 - Add property-based tests.
 - Add interoperability vectors from authoritative standards.
 - Add benchmark comparisons with established libraries.
 - Document key lifecycle and threat models more formally.
 
-## 🤝 Contributing
+## Contributing
 
-Add tests with every cryptographic behavior change. Prefer standards-backed constructions and reviewed libraries. Never submit real secrets or production keys.
+Add tests with every cryptographic behaviour change. Prefer standards-backed constructions and reviewed libraries. Never submit real secrets or production keys.
 
-## 📄 License
+## License
 
 MIT
 
-## 👨‍💻 Author
+## Author
 
-**Matin Odoom**
+**A. Matin Odoom**
